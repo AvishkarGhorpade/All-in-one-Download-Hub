@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #060713;
+  color: #f8f8ff;
+  line-height: 1.6;
+}
+
+a {
+  color: #7fd4ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #0b0d1f;
+  border-bottom: 1px solid #22263d;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.logo span {
+  color: #7fd4ff;
+}
+
+.site-header nav a {
+  margin-left: 16px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.site-header nav a:hover {
+  opacity: 1;
+}
+
+.download-page {
+  max-width: 900px;
+  margin: 20px auto 40px;
+  padding: 0 12px;
+}
+
+.download-card {
+  background: #0f1124;
+  border-radius: 14px;
+  padding: 18px 16px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid #22263d;
+}
+
+.file-info h1 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.file-meta {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.file-description {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.ad-slot {
+  margin: 14px auto;
+  min-height: 60px;
+  border-radius: 10px;
+  background: #15172b;
+  border: 1px dashed #2a3255;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+/* You can remove the text & style once real ads are added */
+
+.download-box {
+  margin-top: 18px;
+  background: #12152b;
+  border-radius: 12px;
+  padding: 14px 12px 16px;
+  border: 1px solid #262c4c;
+}
+
+.download-box h2 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.steps {
+  font-size: 0.9rem;
+  margin-left: 18px;
+  margin-bottom: 12px;
+}
+
+.steps li + li {
+  margin-top: 4px;
+}
+
+.timer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.primary-btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #3f92ff, #7f4bff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.2s;
+  align-self: flex-start;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+.primary-btn.disabled,
+.primary-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.timer-wrapper {
+  font-size: 0.9rem;
+}
+
+.timer-bar {
+  margin-top: 6px;
+  width: 220px;
+  max-width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: #20233f;
+  overflow: hidden;
+}
+
+.timer-bar-fill {
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #3f92ff, #7f4bff);
+  transition: width 0.3s linear;
+}
+
+.status-msg {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.hidden {
+  display: none;
+}
+
+.related-section {
+  margin-top: 24px;
+}
+
+.related-section h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.related-card {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #101225;
+  border: 1px solid #212642;
+}
+
+.related-card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.related-card p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  padding: 16px 0 10px;
+  border-top: 1px solid #14172b;
+  margin-top: 24px;
+}
+
+@media (min-width: 640px) {
+  .download-card {
+    padding: 20px 20px 22px;
+  }
+}
+.home-page {
+  max-width: 1000px;
+  margin: 20px auto 40px;
+  padding: 0 12px;
+}
+
+.hero {
+  background: #0f1124;
+  border-radius: 16px;
+  padding: 20px 16px 22px;
+  border: 1px solid #22263d;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.secondary-btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid #3f92ff;
+  background: transparent;
+  color: #c7dcff;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.2s;
+}
+
+.secondary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+  background: rgba(63, 146, 255, 0.1);
+}
+
+.category-section {
+  margin-top: 24px;
+}
+
+.category-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.section-subtitle {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.card-grid.small .card {
+  padding: 8px 10px;
+}
+
+.card {
+  background: #0f1124;
+  border-radius: 12px;
+  border: 1px solid #212642;
+  padding: 12px 12px 14px;
+  display: block;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, border-color 0.08s ease;
+}
+
+.card h3 {
+  font-size: 0.98rem;
+  margin-bottom: 4px;
+}
+
+.card p {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-bottom: 6px;
+}
+
+.card .tag {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #3f92ff;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  border-color: #3f92ff;
+}
+
+@media (min-width: 640px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card-grid.small {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero {
+    padding: 22px 20px 24px;
+  }
+}

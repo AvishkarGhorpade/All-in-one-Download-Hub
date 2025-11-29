@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Ready - DownloadHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="/">DownloadHub</a></h2>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ad-container">
+        <div class="ad-banner">
+            <div class="ad-placeholder">
+                Advertisement Banner (728x90)
+            </div>
+        </div>
+    </div>
+
+    <main class="final-download">
+        <div class="success-message">
+            <div class="success-icon">✓</div>
+            <h1>Your Download is Ready!</h1>
+            <p>Click the button below to start downloading your file.</p>
+            
+            <div class="download-info">
+                <h3 id="final-file-title">File Name</h3>
+                <div class="file-details">
+                    <span>Size: <span id="final-file-size">0 MB</span></span>
+                    <span>Type: <span id="final-file-type">File</span></span>
+                </div>
+            </div>
+
+            <a id="final-download-btn" href="#" class="btn-download" download>
+                Download Now
+            </a>
+
+            <div class="safety-notice">
+                <p>🔒 Your download is secure and virus-free</p>
+            </div>
+        </div>
+
+        <!-- Additional Ad -->
+        <div class="ad-container">
+            <div class="ad-incontent">
+                <div class="ad-placeholder">
+                    Final Page Advertisement (300x250)
+                </div>
+            </div>
+        </div>
+
+        <div class="share-section">
+            <h3>Share this resource</h3>
+            <div class="share-buttons">
+                <button class="btn-share" onclick="copyShareLink()">Copy Share Link</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/download-manager.js"></script>
+</body>
+</html>
